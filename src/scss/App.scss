@@ -1,10 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import "./variables";
+@import "./themes/darkTheme.scss";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// For thought bubble animation
+
+@mixin inline-animation($duration) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
+
+// For mobile device
+
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
 }
 
 .App {
@@ -15,11 +44,62 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  width: 100vw;
+  height: $body-view-height;
+  width: $body-view-width;
 }
 
 /* sections */
+
+.section {
+  height: $body-view-height;
+  background-color: $light-theme-bg;
+  padding: 2rem 0; /* Add some more padding on top and on bottom */
+
+  @include mobile() {
+    min-height: 100vh;
+    height: auto; /* This is necessary because in line 32 you set a height.*/
+  }
+}
+
+/* Home / first section */
+
+.home-section {
+  @include flexCenter(column);
+  flex-wrap: wrap;
+  position: relative; /* needed to position the language section absolute within this section */
+}
+
+.main-content {
+  @include flexCenter(column);
+  font-size: medium;
+  height: calc(100% - 60px);
+}
+
+/* Header.js */
+.header-aligner {
+  font-family: "Raleway", sans-serif;
+}
+
+.thought-bubble {
+  @include inline-animation(5s) {
+    0% {
+      margin-left: 0px;
+    }
+
+    50% {
+      margin-left: 15px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+
+  color: white;
+  font-size: 80px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
 
 .dev-name {
   font-size: 2em;
@@ -29,50 +109,9 @@ body {
   color: #353239;
 }
 
-.section {
-  height: 100vh;
-  background-color: rgb(221, 199, 199);
-  padding: 2rem 0; /* Add some more padding on top and on bottom */
-}
-/* Home / first section */
-.home.section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  position: relative; /* needed to position the language section absolute within this section */
-}
-
-.main-content {
-  display: flex;
-  align-items: center;
-  font-size: medium;
-  flex-direction: column;
-  justify-content: center;
-  height: calc(100% - 60px);
-}
-
-/* Header.js */
-.header-aligner {
-  font-family: "Raleway", sans-serif;
-}
-
-.language-section {
-  height: 0.5em;
-  bottom: 6rem; /* Padding from .home.section + some extra padding */
-}
-
 .switch,
 .title-animation {
   margin: 2em 0;
-}
-
-.thought-bubble {
-  color: white;
-  font-size: 80px;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
 }
 
 .owl-emoji,
@@ -84,6 +123,10 @@ body {
   margin-left: 20px;
 }
 
+.language-section {
+  height: $language-section-height;
+  bottom: $language-section-bottom; /* Padding from .home.section + some extra padding */
+}
 .language-icon {
   font-size: 50px;
   margin: 0 0.5em;
@@ -93,7 +136,7 @@ body {
 /* About Section */
 
 .about-section {
-  background-color: white;
+  background-color: $light-them-white-bg;
 }
 
 .about {
@@ -115,21 +158,22 @@ body {
 }
 
 .polaroid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
   overflow: visible;
-  /* width: 100%; */
 }
 
 .polaroid-image-span {
-  background: #fff;
+  background: #ffffff;
   display: inline-block;
   margin: 55px 75px 30px;
   padding: 15px 15px 30px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
@@ -147,7 +191,9 @@ body {
   padding: 0px 0px 30px 0px;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
@@ -180,13 +226,12 @@ body {
 
 /* projects-section */
 
-.caousel-div {
+.carousel-div {
   font-family: sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  padding-top: 32px;
 }
+
 .portfolio-item {
   max-width: 100%;
   margin-bottom: 15px;
@@ -194,10 +239,7 @@ body {
 }
 
 .project-contents {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(row);
   margin: 0px 32px;
 }
 
@@ -214,8 +256,7 @@ body {
 }
 
 .section-title {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
   font: 18px/24px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -230,6 +271,9 @@ body {
   color: black;
   text-align: center;
 }
+// .portfolio-item {
+//   height: 200px;
+// }
 .foto img {
   display: block;
   width: 100%;
@@ -332,13 +376,4 @@ body {
 
 #horizontal-list {
   margin: 0 auto;
-}
-
-/* media queries */
-
-@media only screen and (max-width: 480px) {
-  .section {
-    min-height: 100vh;
-    height: auto; /* This is necessary because in line 32 you set a height.*/
-  }
 }

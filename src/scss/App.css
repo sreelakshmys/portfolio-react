@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+/************************* Light-Theme values  ************************/
+/*************************************************************************/
+body[data-theme="dark"] .title-styles {
+  color: white;
+}
+
+body[data-theme="dark"] .link-href {
+  color: white;
+}
+
+body[data-theme="dark"] .project-date {
+  background-color: #834c69;
+  color: white;
+}
+
+body[data-theme="dark"] .section {
+  background-color: #834c69;
+}
+
+body[data-theme="dark"] .bubble-text,
+body[data-theme="dark"] h1 {
+  color: white;
+}
+
+body[data-theme="dark"] .about-section,
+body[data-theme="dark"] .skills-section {
+  background-color: white;
+}
+
+body[data-theme="dark"] .projects-section {
+  background: #834c69;
+}
+
+body[data-theme="dark"] .projects-section .section-title span {
+  color: white !important;
+}
+
+body[data-theme="dark"] .projects-section .project-title-settings {
+  color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* sections */
+.section {
+  height: 100vh;
+  background-color: #ddc7c7;
+  padding: 2rem 0;
+  /* Add some more padding on top and on bottom */
+}
+
+@media (max-width: 480px) {
+  .section {
+    min-height: 100vh;
+    height: auto;
+    /* This is necessary because in line 32 you set a height.*/
+  }
+}
+
+/* Home / first section */
+.home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  /* needed to position the language section absolute within this section */
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: medium;
+  height: calc(100% - 60px);
+}
+
+/* Header.js */
+.header-aligner {
+  font-family: "Raleway", sans-serif;
+}
+
+.thought-bubble {
+  -webkit-animation-name: inline-ua6ebfb17;
+          animation-name: inline-ua6ebfb17;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: white;
+  font-size: 80px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@-webkit-keyframes inline-ua6ebfb17 {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes inline-ua6ebfb17 {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.dev-name {
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-weight: 600 !important;
+  color: #353239;
+}
+
+.switch,
+.title-animation {
+  margin: 2em 0;
+}
+
+.owl-emoji,
+.sun-emoji {
+  display: block;
+  height: 100%;
+  font-size: 25px;
+  text-align: end;
+  margin-left: 20px;
+}
+
+.language-section {
+  height: 0.5em;
+  bottom: 6rem;
+  /* Padding from .home.section + some extra padding */
+}
+
+.language-icon {
+  font-size: 50px;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+}
+
+.about {
+  padding-top: 5%;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  text-align: center;
+}
+
+.about-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: visible;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.polaroid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: visible;
+}
+
+.polaroid-image-span {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+
+.polaroid img {
+  display: block;
+  max-width: 200px;
+}
+
+.about-me-info {
+  background: #fff;
+  display: inline-block;
+  margin: 0px 16px;
+  padding: 0px 0px 30px 0px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+  width: 580px;
+  height: auto;
+  /* Set height to auto so that it automatically fits to the screen */
+}
+
+.circle-icons-div {
+  text-align: left;
+  border-bottom: 1px solid #b9b8b8;
+  width: 100%;
+  background-color: #eeeaea;
+  padding: 0px;
+}
+
+.circle-icon {
+  margin-left: 8px;
+  font-size: 10px;
+}
+
+.about-text-content {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  padding: 16px;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  word-spacing: 6px;
+}
+
+/* projects-section */
+.carousel-div {
+  font-family: sans-serif;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.portfolio-item {
+  max-width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.project-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px 32px;
+}
+
+.project-date {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8px 15px 2px 15px;
+  position: relative;
+  z-index: -500;
+  border-top: 5px solid #696969;
+  border-radius: 0 0 5px 5px;
+  background-color: #696969;
+  color: white;
+}
+
+.section-title {
+  padding-top: 3%;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.project-title-settings {
+  margin-top: 5%;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  text-align: center;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+}
+
+.foto div {
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 auto 5% auto;
+  padding: 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.foto div:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+
+.foto div:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* skills-section */
+.skills-section {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills {
+  background: #1f1f1f;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10%;
+  color: #ffffff;
+}
+
+.icon-tile {
+  font-size: 180%;
+  text-align: center !important;
+  position: relative;
+}
+
+.list-items {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.skills-tile {
+  background-color: rgba(248, 245, 244, 0.05);
+  padding: 10px 10px 5px;
+  width: 100px;
+  margin: 5px 0;
+  border-radius: 8px;
+  text-align: center !important;
+}
+
+.skill-icons {
+  text-align: center !important;
+  font-family: "devicon";
+  font-size: 220%;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.skill-texts {
+  font-size: 80%;
+  margin-top: 4px;
+  text-align: center;
+  color: white;
+}
+
+#horizontal-list {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=App.css.map */

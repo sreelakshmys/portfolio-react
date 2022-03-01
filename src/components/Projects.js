@@ -21,7 +21,7 @@ export default function Projects() {
                     href="https://techy-news-corner.netlify.app/"
                     alt="Techy news Website"
                     target="_blank"
-                    rel="noreferrer noopener"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src={require("../images/to-do-list.png")}
@@ -49,6 +49,7 @@ export default function Projects() {
                     href="https://techy-news-corner.netlify.app/"
                     alt="To - Do List Website"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     <img
                       src={require("../images/hangman.png")}
