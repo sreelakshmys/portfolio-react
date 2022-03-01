@@ -1,0 +1,39 @@
+body[data-theme="dark"] {
+  .title-styles {
+    color: white;
+  }
+
+  .link-href {
+    color: white;
+  }
+
+  .project-date {
+    background-color: #31525b;
+    color: white;
+  }
+
+  .section {
+    background-color: #31525b;
+  }
+
+  .bubble-text,
+  h1 {
+    color: white;
+  }
+
+  .about-section,
+  .skills-section {
+    background-color: white;
+  }
+
+  .projects-section {
+    background: #31525b;
+    .section-title span {
+      color: white !important;
+    }
+
+    .project-title-settings {
+      color: white;
+    }
+  }
+}

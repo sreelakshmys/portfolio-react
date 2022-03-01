@@ -1,0 +1,39 @@
+body[data-theme="dark"] .title-styles {
+  color: white;
+}
+
+body[data-theme="dark"] .link-href {
+  color: white;
+}
+
+body[data-theme="dark"] .project-date {
+  background-color: #31525b;
+  color: white;
+}
+
+body[data-theme="dark"] .section {
+  background-color: #31525b;
+}
+
+body[data-theme="dark"] .bubble-text,
+body[data-theme="dark"] h1 {
+  color: white;
+}
+
+body[data-theme="dark"] .about-section,
+body[data-theme="dark"] .skills-section {
+  background-color: white;
+}
+
+body[data-theme="dark"] .projects-section {
+  background: #31525b;
+}
+
+body[data-theme="dark"] .projects-section .section-title span {
+  color: white !important;
+}
+
+body[data-theme="dark"] .projects-section .project-title-settings {
+  color: white;
+}
+/*# sourceMappingURL=darkTheme.css.map */

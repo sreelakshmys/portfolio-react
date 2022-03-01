@@ -10,6 +10,7 @@ export default function Header({ checked, changeTheme }) {
   const HeaderTitleTypeAnimation = React.memo(() => {
     return (
       <Typical
+        className="title-styles"
         steps={["FULL STACK WEB DEVELOPER", 3000, "REACT DEVELOPER", 2000]}
         loop={Infinity}
         wrapper="p"
@@ -28,7 +29,9 @@ export default function Header({ checked, changeTheme }) {
         />
         <h1 className="dev-name">Sreelakshmy S</h1>
       </div>
-      {isShown && <div>"More like shri-luck-shmeee"</div>}
+      {isShown && (
+        <div className="bubble-text">"More like shri-luck-shmeee"</div>
+      )}
       <div className="title-animation">
         <HeaderTitleTypeAnimation />
       </div>
