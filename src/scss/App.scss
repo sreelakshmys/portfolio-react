@@ -328,8 +328,19 @@ body {
   min-height: 200px;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   color: #ffffff;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#horizontal-list {
+  margin: 0 auto;
 }
 
 .icon-tile {
@@ -372,8 +383,4 @@ body {
   margin-top: 4px;
   text-align: center;
   color: white;
-}
-
-#horizontal-list {
-  margin: 0 auto;
 }

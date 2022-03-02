@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-export default function About() {
+export default function About({ t }) {
   return (
     <div className="about-contents">
       <div className="polaroid">
@@ -37,14 +37,10 @@ export default function About() {
           </div>
           <div className="about-text-content">
             <br />
-            Hello :)
+            {t("ABOUT ME HELLO")}
             <br />
             <span />
-            👋 I'm Sreelakshmy S. I am an experienced developer working in this
-            field since 2017. I enjoy creating things that live on the internet!
-            My interest in web development started back in 2021 when I decided
-            to try building a website of my own — turns out this taught me a lot
-            about HTML and CSS!
+            {t("ABOUT ME TEXT")}
             <span />
           </div>
         </span>

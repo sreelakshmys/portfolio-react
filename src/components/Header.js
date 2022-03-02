@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import Switch from "react-switch";
 import { Icon } from "@iconify/react";
 
-export default function Header({ checked, changeTheme }) {
+export default function Header({ checked, changeTheme, t }) {
   // useState variables
   const [isShown, setIsShown] = useState(false);
 
@@ -11,7 +11,7 @@ export default function Header({ checked, changeTheme }) {
     return (
       <Typical
         className="title-styles"
-        steps={["FULL STACK WEB DEVELOPER", 3000, "REACT DEVELOPER", 2000]}
+        steps={[t("FULL STACK DEVELOPER"), 3000, t("REACT DEVELOPER"), 2000]}
         loop={Infinity}
         wrapper="p"
       />

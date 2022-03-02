@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-export default function Language({ languageMode, setLanguageMode }) {
+export default function Language({ selectedLang, changeLanguage }) {
   return (
     <div className="language">
       <div style={{ display: "inline" }}>
@@ -8,9 +8,9 @@ export default function Language({ languageMode, setLanguageMode }) {
           icon="emojione-v1:flag-for-united-kingdom"
           className=" language-icon"
           filter={
-            languageMode === "en" ? "brightness(40%)" : "brightness(100%)"
+            selectedLang === "en" ? "brightness(40%)" : "brightness(100%)"
           }
-          onClick={() => setLanguageMode("en")}
+          onClick={() => changeLanguage("en")}
         />
       </div>
       <div style={{ display: "inline" }}>
@@ -18,9 +18,9 @@ export default function Language({ languageMode, setLanguageMode }) {
           icon="emojione-v1:flag-for-germany"
           className="language-icon"
           filter={
-            languageMode === "en" ? "brightness(100%)" : "brightness(40%)"
+            selectedLang === "en" ? "brightness(100%)" : "brightness(40%)"
           }
-          onClick={() => setLanguageMode("de")}
+          onClick={() => changeLanguage("de")}
         />
       </div>
     </div>

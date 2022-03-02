@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-export default [
+const skillSet = [
   {
     id: Math.floor(Math.random() * 10000),
     title: "HTML 5",
@@ -43,3 +43,5 @@ export default [
     icon: <Icon icon="fa-brands:java" className="skill-icons" />,
   },
 ];
+
+export default skillSet;
