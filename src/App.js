@@ -7,6 +7,7 @@ import Scroll from "./components/SmoothScroll";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { useTranslation } from "react-i18next";
 
 function App() {
   // To check the browser color
@@ -31,11 +32,8 @@ function App() {
     }
   }
 
-  // useState variables
-
+  const { t } = useTranslation();
   const [checked, setChecked] = useState(initialCheck());
-  const [languageMode, setLanguageMode] = useState("en");
-
   // Function to change the theme
   function changeTheme() {
     setChecked((prev) => (prev ? false : true));
@@ -45,11 +43,31 @@ function App() {
     localStorage.setItem("theme", newTheme);
   }
 
+  // useState variables
+  const { i18n } = useTranslation();
+  const [selectedLang, setSelectedLang] = useState(setInitialLanguageValue);
+
+  function setInitialLanguageValue() {
+    if (localStorage.getItem("lang")) {
+      i18n.changeLanguage(localStorage.getItem("lang"));
+      return localStorage.getItem("lang");
+    } else {
+      i18n.changeLanguage("en");
+      localStorage.setItem("lang", "en");
+      return "en";
+    }
+  }
+
+  const changeLanguage = (langValue) => {
+    setSelectedLang(langValue);
+    i18n.changeLanguage(langValue);
+    localStorage.setItem("lang", langValue);
+  };
+
   return (
     <div className="App">
       <Scroll />
       {/* page - 1 */}
-
       <section className="home-section section">
         <GithubCorner
           href="https://github.com/sreelakshmys"
@@ -57,41 +75,38 @@ function App() {
           size={90}
         />
         <div className="main-content">
-          <Header checked={checked} changeTheme={changeTheme} />
+          <Header checked={checked} changeTheme={changeTheme} t={t} />
         </div>
         <div className="language-section">
           <Language
-            languageMode={languageMode}
-            setLanguageMode={setLanguageMode}
+            selectedLang={selectedLang}
+            changeLanguage={changeLanguage}
           />
         </div>
       </section>
-
       {/* page 2 */}
       <section className="about-section section">
         <div>
           <h1 className="about">
-            <span>ABOUT ME</span>
+            <span>{t("ABOUT ME")}</span>
           </h1>
           <div>
-            <About />
+            <About t={t} />
           </div>
         </div>
       </section>
-
       {/* page 3 */}
       <section className="projects-section section">
         <div>
           <h1 className="section-title">
-            <span>PROJECTS</span>
+            <span>{t("PROJECTS")}</span>
           </h1>
           <Projects />
         </div>
       </section>
-
       {/* page 3 */}
       <section className="skills-section section">
-        <Skills />
+        <Skills t={t} />
       </section>
     </div>
   );

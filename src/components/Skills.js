@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import skillSet from "./skillSet";
 
-export default function Skills() {
+export default function Skills({ t }) {
   const [skills] = useState(skillSet);
   return (
     <section id="skills">
-      <div className="skill-flex">
+      <div>
         <h1 className="section-title">
-          <span>SKILLS</span>
+          <span>{t("SKILLS")}</span>
         </h1>
-        <div>
-          <div style={{ textAlign: "center" }}>
+        <div className="skills-list">
+          <div>
             <ul id="horizontal-list icon-tile">
               {skills.map((skill, i) => {
                 return (
