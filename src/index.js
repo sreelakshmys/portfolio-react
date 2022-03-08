@@ -7,17 +7,7 @@ import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense
-      fallback={
-        <div className="logo-page">
-          <img
-            className="logo-image"
-            src={require("./images/icon-image.png")}
-            alt="logo"
-          />
-        </div>
-      }
-    >
+    <Suspense fallback={<div></div>}>
       <App />
     </Suspense>
   </React.StrictMode>,

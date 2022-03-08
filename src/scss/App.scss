@@ -52,7 +52,7 @@ body {
 
 .section {
   height: $body-view-height;
-  background-color: $light-theme-bg;
+  background: $light-theme-bg;
   padding: 2rem 0; /* Add some more padding on top and on bottom */
 
   @include mobile() {
@@ -136,7 +136,7 @@ body {
 /* About Section */
 
 .about-section {
-  background-color: $light-them-white-bg;
+  background: $light-them-white-bg;
 }
 
 .about {
@@ -318,7 +318,7 @@ body {
 /* skills-section */
 
 .skills-section {
-  background-color: white;
+  background: $light-them-white-bg;
   display: flex;
   align-items: center;
 }

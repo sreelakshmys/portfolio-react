@@ -13,7 +13,7 @@ body[data-theme="dark"] {
   }
 
   .section {
-    background-color: #31525b;
+    background: linear-gradient(110deg, #040758 60%, #05086a 60%);
   }
 
   .bubble-text,
@@ -23,11 +23,11 @@ body[data-theme="dark"] {
 
   .about-section,
   .skills-section {
-    background-color: white;
+    background: white;
   }
 
   .projects-section {
-    background: #31525b;
+    background: linear-gradient(110deg, #040758 60%, #05086a 60%);
     .section-title span {
       color: white !important;
     }
