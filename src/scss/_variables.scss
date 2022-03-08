@@ -16,7 +16,8 @@ $dev-name-font-color: #353239;
 
 /************************* Light-Theme values  ************************/
 
-$light-theme-bg: rgb(221, 199, 199);
+// $light-theme-bg: rgb(221, 199, 199);
+$light-theme-bg: linear-gradient(110deg, #81c7cd 60%, #a5d7db 60%);
 $light-them-white-bg: #ffffff;
 
 /*************************************************************************/
