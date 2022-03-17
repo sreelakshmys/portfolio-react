@@ -1,0 +1,78 @@
+/* Custom Dark Mode Toggle Element */
+
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: 55px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: rgb(151, 144, 144);
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0px;
+  content: "";
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  transition: 0.4s;
+  width: 24px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(31px);
+}
+
+input:checked + .slider {
+  background-color: rgb(7, 49, 128);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  /************** Home Section ***********/
+
+  .toggle-theme {
+    height: 31px;
+    width: 66px;
+  }
+
+  .slider:before {
+    height: 30px;
+    width: 28px;
+  }
+  input:checked + .slider:before {
+    transform: translateX(38px);
+  }
+}

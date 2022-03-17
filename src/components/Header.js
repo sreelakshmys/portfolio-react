@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Typical from "react-typical";
-import Switch from "react-switch";
 import { Icon } from "@iconify/react";
 
-export default function Header({ checked, changeTheme, t }) {
+export default function Header({ t }) {
   // useState variables
   const [isShown, setIsShown] = useState(false);
 
@@ -35,7 +34,7 @@ export default function Header({ checked, changeTheme, t }) {
       <div className="title-animation">
         <HeaderTitleTypeAnimation />
       </div>
-      <div className="switch">
+      {/* <div className="switch">
         <Switch
           checked={checked}
           onChange={changeTheme}
@@ -50,7 +49,7 @@ export default function Header({ checked, changeTheme, t }) {
           }
           id="icon-switch"
         />
-      </div>
+      </div> */}
     </header>
   );
 }

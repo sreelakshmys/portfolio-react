@@ -7,6 +7,7 @@ import Scroll from "./components/SmoothScroll";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import DarkMode from "./components/DarkMode";
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -74,9 +75,16 @@ function App() {
           direction="left"
           size={90}
         />
+
         <div className="main-content">
-          <Header checked={checked} changeTheme={changeTheme} t={t} />
+          <div>
+            <Header t={t} />
+          </div>
+          <div className="dark-mode-section">
+            <DarkMode changeTheme={changeTheme} checked={checked} />
+          </div>
         </div>
+
         <div className="language-section">
           <Language
             selectedLang={selectedLang}
@@ -87,7 +95,7 @@ function App() {
       {/* page 2 */}
       <section className="about-section section">
         <div>
-          <h1 className="about">
+          <h1 className="section-title">
             <span>{t("ABOUT ME")}</span>
           </h1>
           <div>
@@ -107,6 +115,9 @@ function App() {
       {/* page 3 */}
       <section className="skills-section section">
         <Skills t={t} />
+      </section>
+      <section className="section">
+        <img src={require("./images/linkedIn.png")} alt="linked in image" />
       </section>
     </div>
   );
