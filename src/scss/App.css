@@ -196,7 +196,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: medium;
-  height: 28em;
+  height: calc(100% - 90px);
 }
 
 /* Header.js */
@@ -205,8 +205,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-ub455926c;
-          animation-name: inline-ub455926c;
+  -webkit-animation-name: inline-u44684dc6;
+          animation-name: inline-u44684dc6;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -222,7 +222,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-ub455926c {
+@-webkit-keyframes inline-u44684dc6 {
   0% {
     margin-left: 0px;
   }
@@ -234,7 +234,7 @@ body {
   }
 }
 
-@keyframes inline-ub455926c {
+@keyframes inline-u44684dc6 {
   0% {
     margin-left: 0px;
   }
