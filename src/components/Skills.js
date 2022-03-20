@@ -6,7 +6,7 @@ export default function Skills({ t }) {
   return (
     <section id="skills">
       <div>
-        <h1 className="section-title">
+        <h1 className="section-title skills-title">
           <span>{t("SKILLS")}</span>
         </h1>
         <div className="skills-list">
