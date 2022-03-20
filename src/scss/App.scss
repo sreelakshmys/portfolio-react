@@ -60,7 +60,7 @@ body {
 .main-content {
   @include flexCenter(column);
   font-size: medium;
-  height: calc(100% - 60px);
+  height: 28em;
 }
 
 /* Header.js */
@@ -141,6 +141,7 @@ body {
   letter-spacing: 3px;
   color: black;
   text-align: center;
+  margin: 2em;
 }
 
 .about-contents {
@@ -150,6 +151,7 @@ body {
   align-items: center;
   overflow: visible;
   flex-wrap: wrap;
+  margin: 7em 0em;
 }
 
 .polaroid {
@@ -164,40 +166,37 @@ body {
   padding: 12px 12px;
   text-align: center;
   text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
-  width: 121px;
+  width: 144px;
 }
 
 img.avatar {
-  height: 90px;
+  height: 150px;
 }
 
 .mern-stack-icons {
   font-size: 90%;
-  margin: 6% 4% 0 5%;
+  margin: 6% 7% 0 5%;
 }
 
 .about-me-info {
   background: #fff;
   display: inline-block;
-  margin: 0px 32px;
+  margin: 4em 2em;
   text-align: center;
   text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
   width: 300px;
-  height: 140px;
+  height: 170px;
   max-width: 300px;
 }
 
@@ -223,93 +222,74 @@ img.avatar {
   padding: 8px;
   display: inline-block;
   margin: 0 auto;
-  word-spacing: 3px;
-  font-size: 10px;
+  word-spacing: 9px;
+  font-size: 12px;
   text-align: justify;
   line-height: 14px;
 }
 
 /* projects-section */
 
-.carousel-div {
-  font-family: sans-serif;
+.project-card-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3em 1em 2.5em 1em;
+}
+
+.flip-outer-div {
+  background-color: #ffffff;
+  padding: 0.7em;
+  margin: 1.3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card {
+  width: 94px;
+  height: 133px;
+}
+
+.flip-card-inner {
   width: 100%;
-  padding-top: 32px;
-}
-
-.portfolio-item {
-  max-width: 100%;
-  margin-bottom: 15px;
+  height: 100%;
   text-align: center;
-}
-
-.project-contents {
-  @include flexCenter(row);
-  margin: 0px 32px;
-}
-
-.project-date {
-  font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 8px 15px 2px 15px;
-  position: relative;
-  z-index: -500;
-  border-top: 5px solid #696969;
-  border-radius: 0 0 5px 5px;
-  background-color: #696969;
-  color: white;
-}
-
-.project-title-settings {
-  margin-top: 5%;
-  font: 18px/24px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: black;
-  text-align: center;
-}
-// .portfolio-item {
-//   height: 200px;
-// }
-.foto img {
-  display: block;
-  width: 100%;
-}
-
-.foto div {
-  background: #ffffff;
-  display: inline-block;
-  margin: 0 auto 5% auto;
-  padding: 10px 10px 5px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
   z-index: 0;
-  position: relative;
-  cursor: pointer;
 }
 
-.foto div:after {
-  color: #333;
-  font-size: 25px;
-  content: attr(title);
-  position: relative;
-  top: 15px;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.foto div:hover {
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  transform: scale(1.01);
-  z-index: 10;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+.flip-outer-div:hover {
+  transform: scale(1.02);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #a3a3a3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transform: rotateY(180deg);
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 // ******************************* Media Queries ***************************//
@@ -338,13 +318,34 @@ img.avatar {
   /********************** About ME Section *********************/
   .section-title {
     font-size: 16px;
+    margin: 2em;
+  }
+  .about-contents {
+    margin: 5em 0em;
   }
 
   .about-text-content {
-    font-size: 10px;
+    font-size: 14px;
+    word-spacing: 6px;
+    line-height: 15px;
   }
   .about-section {
     padding-top: 1.5rem;
+  }
+
+  /******************** Project Section **********************/
+  .project-card-div {
+    margin: 8em 1em 0.5em 1em;
+  }
+
+  .flip-card {
+    width: 115px;
+    height: 149px;
+  }
+
+  .flip-outer-div {
+    margin: 1.07em;
+    padding: 0.7em;
   }
 }
 
@@ -385,16 +386,18 @@ img.avatar {
 
   .section-title {
     font-size: 18px;
+    margin: 2em;
   }
+
   .polaroid-image-span {
-    margin: 35px 15px 30px 35px;
+    margin: 27px 15px 30px 35px;
     padding: 15px 15px 30px;
-    width: 191px;
+    width: 200px;
   }
 
   img.avatar {
-    max-width: 200px;
-    height: 177px;
+    max-width: 243px;
+    height: 221px;
   }
 
   .mern-stack-icons {
@@ -403,15 +406,35 @@ img.avatar {
   }
 
   .about-me-info {
-    height: 166px;
-    max-width: 340px;
-    width: 340px;
+    height: 185px;
+    max-width: 394px;
+    width: 397px;
+    margin: 2em;
+  }
+
+  .about-contents {
+    margin: 3em;
   }
 
   .about-text-content {
     padding: 16px;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  /******************** Project Section **********************/
+
+  .project-card-div {
+    margin: 4em 2em;
+  }
+
+  .flip-card {
+    width: 150px;
+    height: 189px;
+  }
+
+  .flip-outer-div {
+    margin: 0.75em;
   }
 }
 
@@ -419,38 +442,45 @@ img.avatar {
   /******************** ABOUT ME Section **********************/
 
   .section-title {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 2em;
   }
+
   .polaroid-image-span {
-    margin: 35px 10px 30px 45px;
-    padding: 15px 15px 30px;
-    width: 191px;
+    margin: 4px 10px 30px 45px;
+    padding: 14px 13px 30px;
+    width: 212px;
   }
 
   img.avatar {
-    max-width: 200px;
-    height: 197px;
+    max-width: 278px;
+    height: 218px;
   }
 
   .mern-stack-icons {
     font-size: 150%;
-    margin: 9% 5% 0 5%;
+    margin: 9% 7% 0 5%;
   }
 
   .about-me-info {
-    height: 206px;
-    max-width: 510px;
-    width: 510px;
+    height: 208px;
+    max-width: 535px;
+    width: 531px;
   }
-
+  .circle-icons-div {
+    padding: 4px;
+  }
   .circle-icon {
-    font-size: 9px;
+    font-size: 11px;
   }
-
   .about-text-content {
     padding: 18px;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 26px;
+  }
+
+  .about-contents {
+    margin: 8em 0em;
   }
 }
 
@@ -461,14 +491,14 @@ img.avatar {
     font-size: 20px;
   }
   .polaroid-image-span {
-    margin: 65px 10px 30px 45px;
-    padding: 15px 15px 30px;
-    width: 191px;
+    margin: 35px 10px 30px 45px;
+    padding: 24px 15px 30px;
+    width: 235px;
   }
 
   img.avatar {
-    max-width: 200px;
-    height: 197px;
+    max-width: 254px;
+    height: 272px;
   }
 
   .mern-stack-icons {
@@ -477,7 +507,7 @@ img.avatar {
   }
 
   .about-me-info {
-    height: 206px;
+    height: 234px;
     max-width: 510px;
     width: 510px;
   }
@@ -485,10 +515,22 @@ img.avatar {
   .circle-icon {
     font-size: 9px;
   }
-
+  .about-contents {
+    margin: 4em 0em;
+  }
   .about-text-content {
-    padding: 18px;
-    font-size: 15px;
+    padding: 30px 18px;
+    font-size: 19px;
     line-height: 22px;
+  }
+
+  /************************* Projects Section  *************************/
+  .project-card-div {
+    margin: 9em 2em;
+  }
+
+  .flip-card {
+    width: 200px;
+    height: 230px;
   }
 }
