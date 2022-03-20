@@ -60,7 +60,7 @@ body {
 .main-content {
   @include flexCenter(column);
   font-size: medium;
-  height: 28em;
+  height: calc(100% - 90px);
 }
 
 /* Header.js */
