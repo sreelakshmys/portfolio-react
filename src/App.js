@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import DarkMode from "./components/DarkMode";
 import { useTranslation } from "react-i18next";
+import Contact from "./components/Contact";
 
 function App() {
   // To check the browser color
@@ -116,8 +117,8 @@ function App() {
       <section className="skills-section section">
         <Skills t={t} />
       </section>
-      <section className="section">
-        <img src={require("./images/linkedIn.png")} alt="linked in image" />
+      <section className="contact-section section">
+        <Contact t={t} />
       </section>
     </div>
   );

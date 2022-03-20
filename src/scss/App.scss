@@ -300,10 +300,6 @@ img.avatar {
   align-items: center;
 }
 
-.skills-title {
-  color: #ffffff;
-}
-
 #skills {
   background: #1f1f1f;
   min-height: 200px;
@@ -313,12 +309,15 @@ img.avatar {
   color: #ffffff;
 }
 
+.skills-title {
+  color: #ffffff;
+}
+
 .skills-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 0%;
-  margin-bottom: 8%;
+  padding-top: 1%;
 }
 
 #horizontal-list {
@@ -365,6 +364,62 @@ img.avatar {
   margin-top: 4px;
   text-align: center;
   color: white;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+}
+.logo-contact {
+  height: 80px;
+  width: 84px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 9px;
+  margin: 2em 0em;
+}
+.logo-contact > img {
+  object-fit: contain;
+  height: 92%;
+  width: 92%;
+}
+
+#socials {
+  display: flex;
+  background: #1f1f1f;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 17em;
+  border-radius: 45px;
+}
+
+#socials > div {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icons {
+  margin: 2.5em 0em 0em;
+}
+
+.social-media-icons {
+  margin: 0.25em;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.moto {
+  font-style: italic;
+}
+
+.contact-title {
+  margin-top: 1em;
 }
 
 // ******************************* Media Queries ***************************//
@@ -511,29 +566,6 @@ img.avatar {
   .flip-outer-div {
     margin: 0.75em;
   }
-
-  /********** Skills Section *************/
-
-  #skills {
-    padding-bottom: 3%;
-  }
-  .skills-list {
-    margin: 0 4% 8% 4%;
-  }
-
-  .skills-tile {
-    margin: 7px 3px;
-    padding: 30px 19px 41px;
-  }
-
-  .skill-texts {
-    font-size: 95%;
-  }
-
-  .skills-list {
-    margin: 0% 2%;
-    padding: 5% 0% 0%;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -579,22 +611,6 @@ img.avatar {
 
   .about-contents {
     margin: 8em 0em;
-  }
-
-  /********** Skills Section *************/
-  .skills-tile {
-    padding: 20px 11px 16px;
-    margin: 8px 4px;
-  }
-
-  .skills-list {
-    margin: 0 2% 8% 2%;
-  }
-  .skill-icons {
-    font-size: 260%;
-  }
-  .skill-texts {
-    font-size: 92%;
   }
 }
 
@@ -646,23 +662,5 @@ img.avatar {
   .flip-card {
     width: 200px;
     height: 230px;
-  }
-
-  /*************Skills Section *************/
-  .skills-list {
-    margin: 0 2% 4% 2%;
-  }
-
-  .skills-tile {
-    padding: 40px 11px 41px;
-    width: 132px;
-  }
-
-  .skill-icons {
-    font-size: 370%;
-  }
-
-  .skill-texts {
-    font-size: 115%;
   }
 }
