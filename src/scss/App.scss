@@ -292,6 +292,81 @@ img.avatar {
   object-fit: fill;
 }
 
+/* skills-section */
+
+.skills-section {
+  background: $light-them-white-bg;
+  display: flex;
+  align-items: center;
+}
+
+.skills-title {
+  color: #ffffff;
+}
+
+#skills {
+  background: #1f1f1f;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 5%;
+  color: #ffffff;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+  margin-bottom: 8%;
+}
+
+#horizontal-list {
+  margin: 0 auto;
+}
+
+.icon-tile {
+  font-size: 180%;
+
+  text-align: center !important;
+  position: relative;
+}
+
+.list-items {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.skills-tile {
+  background-color: rgba(248, 245, 244, 0.05);
+  padding: 10px 10px 5px;
+  width: 100px;
+  margin: 5px 0;
+  border-radius: 8px;
+  text-align: center !important;
+}
+
+.skill-icons {
+  text-align: center !important;
+  font-family: "devicon";
+  font-size: 220%;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.skill-texts {
+  font-size: 80%;
+  margin-top: 4px;
+  text-align: center;
+  color: white;
+}
+
 // ******************************* Media Queries ***************************//
 
 @media (min-width: 375px) {
@@ -436,6 +511,29 @@ img.avatar {
   .flip-outer-div {
     margin: 0.75em;
   }
+
+  /********** Skills Section *************/
+
+  #skills {
+    padding-bottom: 3%;
+  }
+  .skills-list {
+    margin: 0 4% 8% 4%;
+  }
+
+  .skills-tile {
+    margin: 7px 3px;
+    padding: 30px 19px 41px;
+  }
+
+  .skill-texts {
+    font-size: 95%;
+  }
+
+  .skills-list {
+    margin: 0% 2%;
+    padding: 5% 0% 0%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -481,6 +579,22 @@ img.avatar {
 
   .about-contents {
     margin: 8em 0em;
+  }
+
+  /********** Skills Section *************/
+  .skills-tile {
+    padding: 20px 11px 16px;
+    margin: 8px 4px;
+  }
+
+  .skills-list {
+    margin: 0 2% 8% 2%;
+  }
+  .skill-icons {
+    font-size: 260%;
+  }
+  .skill-texts {
+    font-size: 92%;
   }
 }
 
@@ -532,5 +646,23 @@ img.avatar {
   .flip-card {
     width: 200px;
     height: 230px;
+  }
+
+  /*************Skills Section *************/
+  .skills-list {
+    margin: 0 2% 4% 2%;
+  }
+
+  .skills-tile {
+    padding: 40px 11px 41px;
+    width: 132px;
+  }
+
+  .skill-icons {
+    font-size: 370%;
+  }
+
+  .skill-texts {
+    font-size: 115%;
   }
 }
