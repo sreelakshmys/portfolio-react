@@ -205,8 +205,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u5203bfc7;
-          animation-name: inline-u5203bfc7;
+  -webkit-animation-name: inline-u049a738a;
+          animation-name: inline-u049a738a;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -222,7 +222,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u5203bfc7 {
+@-webkit-keyframes inline-u049a738a {
   0% {
     margin-left: 0px;
   }
@@ -234,7 +234,7 @@ body {
   }
 }
 
-@keyframes inline-u5203bfc7 {
+@keyframes inline-u049a738a {
   0% {
     margin-left: 0px;
   }
@@ -571,6 +571,84 @@ img.avatar {
   margin-top: 4px;
   text-align: center;
   color: white;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-contact {
+  height: 80px;
+  width: 84px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 9px;
+  margin: 2em 0em;
+}
+
+.logo-contact > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 92%;
+  width: 92%;
+}
+
+#socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 17em;
+  border-radius: 45px;
+}
+
+#socials > div {
+  width: 100%;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-icons {
+  margin: 2.5em 0em 0em;
+}
+
+.social-media-icons {
+  margin: 0.25em;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.moto {
+  font-style: italic;
+}
+
+.contact-title {
+  margin-top: 1em;
 }
 
 @media (min-width: 375px) {
