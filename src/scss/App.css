@@ -205,8 +205,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u9473ad79;
-          animation-name: inline-u9473ad79;
+  -webkit-animation-name: inline-ub510f456;
+          animation-name: inline-ub510f456;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -222,7 +222,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u9473ad79 {
+@-webkit-keyframes inline-ub510f456 {
   0% {
     margin-left: 0px;
   }
@@ -234,7 +234,7 @@ body {
   }
 }
 
-@keyframes inline-u9473ad79 {
+@keyframes inline-ub510f456 {
   0% {
     margin-left: 0px;
   }
@@ -579,6 +579,9 @@ img.avatar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo-contact {
@@ -598,19 +601,9 @@ img.avatar {
 }
 
 #socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: #1f1f1f;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin: 17em;
+  width: 50%;
   border-radius: 45px;
 }
 
@@ -648,6 +641,11 @@ img.avatar {
 
 .contact-title {
   margin-top: 1em;
+}
+
+.social-links {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 @media (min-width: 375px) {
