@@ -51,7 +51,6 @@ body {
   height: $body-view-height;
   background: $light-theme-bg;
   padding: 2rem 0; /* Add some more padding on top and on bottom */
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Home / first section */
@@ -60,6 +59,7 @@ body {
   @include flexCenter(column);
   flex-wrap: wrap;
   position: relative; /* needed to position the language section absolute within this section */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .main-content {
