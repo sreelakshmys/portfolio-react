@@ -505,15 +505,27 @@ img.avatar {
     width: 110px;
     height: 126px;
   }
+
   .flip-outer-div {
-    margin: 4.4%;
+    margin: 8.35%;
+  }
+}
+
+@media (min-width: 412px) {
+  .flip-outer-div {
+    margin: 9%;
+  }
+
+  .flip-card {
+    width: 156px;
+    height: 161px;
   }
 }
 
 @media (min-width: 576px) {
   /******************** Project Section **********************/
   .flip-outer-div {
-    margin: 8%;
+    margin: 9%;
   }
 
   .flip-card {
