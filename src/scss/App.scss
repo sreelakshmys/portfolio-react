@@ -29,6 +29,11 @@
   animation-iteration-count: infinite;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -37,7 +42,6 @@
 
 body {
   margin: 0;
-  height: $body-view-height;
   width: $body-view-width;
 }
 
@@ -498,9 +502,8 @@ img.avatar {
     width: 110px;
     height: 126px;
   }
-
   .flip-outer-div {
-    margin: 4.4%;
+    margin: 18.4%;
   }
 }
 
@@ -602,7 +605,7 @@ img.avatar {
   }
 
   .flip-outer-div {
-    margin: 3em;
+    margin: 7em;
   }
 }
 

@@ -136,6 +136,11 @@ input:checked + .slider {
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   display: -webkit-box;
@@ -149,7 +154,6 @@ input:checked + .slider {
 
 body {
   margin: 0;
-  height: 100vh;
   width: 100vw;
 }
 
@@ -206,8 +210,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u2fb56831;
-          animation-name: inline-u2fb56831;
+  -webkit-animation-name: inline-u0c4b71ba;
+          animation-name: inline-u0c4b71ba;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -223,7 +227,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u2fb56831 {
+@-webkit-keyframes inline-u0c4b71ba {
   0% {
     margin-left: 0px;
   }
@@ -235,7 +239,7 @@ body {
   }
 }
 
-@keyframes inline-u2fb56831 {
+@keyframes inline-u0c4b71ba {
   0% {
     margin-left: 0px;
   }
@@ -730,7 +734,7 @@ img.avatar {
     height: 126px;
   }
   .flip-outer-div {
-    margin: 4.4%;
+    margin: 18.4%;
   }
 }
 
@@ -813,7 +817,7 @@ img.avatar {
     height: 212px;
   }
   .flip-outer-div {
-    margin: 3em;
+    margin: 7em;
   }
 }
 
