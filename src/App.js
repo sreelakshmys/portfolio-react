@@ -112,7 +112,7 @@ function App() {
         <h1 className="section-title">
           <span>{t("PROJECTS")}</span>
         </h1>
-        <Projects />
+        <Projects t={t} />
       </section>
       {/* page 3 */}
       <section className="skills-section section">

@@ -245,10 +245,9 @@ img.avatar {
 }
 
 .flip-outer-div {
-  background-color: #ffffff;
-  padding: 0.7em;
   margin: 0.75em 1.3em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .flip-card {
@@ -288,9 +287,20 @@ img.avatar {
 }
 
 .flip-card-back {
-  background-color: #a3a3a3;
+  background-color: #f3d2d2;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transform: rotateY(180deg);
+  font-size: 75%;
+  font-style: italic;
+  @include flexCenter(column);
+}
+
+.flip-card-back > div {
+  width: 80%;
+}
+
+.project-title {
+  margin-bottom: 1.5em;
 }
 .project-image {
   width: 100%;
@@ -491,7 +501,6 @@ img.avatar {
 
   .flip-outer-div {
     margin: 4.4%;
-    padding: 4%;
   }
 }
 
@@ -499,7 +508,6 @@ img.avatar {
   /******************** Project Section **********************/
   .flip-outer-div {
     margin: 8%;
-    padding: 4%;
   }
 
   .flip-card {
@@ -603,7 +611,7 @@ img.avatar {
 
   .section-title,
   .about-section-title {
-    font-size: 20px;
+    font-size: 19px;
     margin: 2em;
     letter-spacing: 6px;
   }
@@ -655,7 +663,6 @@ img.avatar {
 
   .flip-outer-div {
     margin: 2em 1em;
-    padding: 1.25%;
   }
 
   .flip-card {

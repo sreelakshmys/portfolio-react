@@ -6,6 +6,12 @@
   "SKILLS": "SKILLS",
   "ABOUT ME HELLO": "Hello :) ",
   "ABOUT ME TEXT": "👋 I'm Sreelakshmy S. I'm a passionate Full Stack Web Developer who enjoys creating things that live on the internet! My interest in web development started when I tried to create my own website. Turned out that I loved building anything and everything related to the web!",
+  "HANGMAN_TITLE": "HANGMAN",
+  "HANGMAN_PROJECT": "An old school favorite, a word game where the goal is simply to find the missing letters of a word",
+  "TO-DO LIST": "TO-DO APP",
+  "TO-DO PROJECT": "A task management app to help you stay organized and manage your day-to-day",
+  "TECHY NEWS": "TECHY NEWS",
+  "TECHY NEWS PROJECT": "A social news website focusing on computer science and entrepreneurship",
   "MOTTO": "Living, learning, & leveling up one day at a time",
   "CONTACT_TITLE": "Stay Connected!"
 }
