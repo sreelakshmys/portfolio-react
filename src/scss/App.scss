@@ -369,7 +369,9 @@ img.avatar {
 .contact-section {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 .logo-contact {
   height: 80px;
   width: 84px;
@@ -378,6 +380,7 @@ img.avatar {
   padding: 9px;
   margin: 2em 0em;
 }
+
 .logo-contact > img {
   object-fit: contain;
   height: 92%;
@@ -385,17 +388,14 @@ img.avatar {
 }
 
 #socials {
-  display: flex;
   background: #1f1f1f;
   color: white;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 17em;
+  width: 50%;
   border-radius: 45px;
 }
 
 #socials > div {
+  // margin: 17em;
   width: 100%;
   padding: 2em;
   display: flex;
@@ -420,6 +420,11 @@ img.avatar {
 
 .contact-title {
   margin-top: 1em;
+}
+
+.social-links {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 // ******************************* Media Queries ***************************//

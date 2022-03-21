@@ -12,11 +12,32 @@ export default function Contact({ t }) {
 
         <div className="social-icons">
           <div className="contact-title">{t("CONTACT_TITLE")}</div>
-          <Icon className="social-media-icons" icon="line-md:linkedin" />
+          <a
+            href="https://www.linkedin.com/in/sreelakshmys/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <Icon className="social-media-icons" icon="line-md:linkedin" />
+          </a>
 
-          <Icon className="social-media-icons" icon="fontisto:github" />
-
-          <Icon className="social-media-icons" icon="ant-design:mail-twotone" />
+          <a
+            href="  https://github.com/sreelakshmys"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-links"
+          >
+            <Icon className="social-media-icons" icon="fontisto:github" />
+          </a>
+          <Icon
+            className="social-media-icons"
+            icon="ant-design:mail-twotone"
+            onClick={() => {
+              window.open(
+                `mailto:sreelakshmys.mec@gmail.com?subject=Hi there 👋!`
+              );
+            }}
+          />
         </div>
       </div>
     </section>
