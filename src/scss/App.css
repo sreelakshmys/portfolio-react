@@ -211,8 +211,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u565173b0;
-          animation-name: inline-u565173b0;
+  -webkit-animation-name: inline-ua17363cc;
+          animation-name: inline-ua17363cc;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -228,7 +228,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u565173b0 {
+@-webkit-keyframes inline-ua17363cc {
   0% {
     margin-left: 0px;
   }
@@ -240,7 +240,7 @@ body {
   }
 }
 
-@keyframes inline-u565173b0 {
+@keyframes inline-ua17363cc {
   0% {
     margin-left: 0px;
   }
@@ -737,7 +737,7 @@ img.avatar {
     height: 126px;
   }
   .flip-outer-div {
-    margin: 18.4%;
+    margin: 4.4%;
   }
 }
 
@@ -820,7 +820,7 @@ img.avatar {
     height: 212px;
   }
   .flip-outer-div {
-    margin: 7em;
+    margin: 3em;
   }
 }
 
