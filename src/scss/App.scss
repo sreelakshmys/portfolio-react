@@ -51,6 +51,7 @@ body {
   height: $body-view-height;
   background: $light-theme-bg;
   padding: 2rem 0; /* Add some more padding on top and on bottom */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Home / first section */
@@ -435,10 +436,12 @@ img.avatar {
 
 .moto {
   font-style: italic;
+  font-size: 0.75em;
 }
 
 .contact-title {
   margin-top: 1em;
+  font-size: 0.75em;
 }
 
 .social-links {
