@@ -1,7 +1,7 @@
 import React from "react";
 import "../scss/App.scss";
 
-export default function ProjectFlipCard({ projectData }) {
+export default function ProjectFlipCard({ projectData, t }) {
   return (
     <div className="flip-outer-div">
       <div className="flip-card">
@@ -10,8 +10,10 @@ export default function ProjectFlipCard({ projectData }) {
             <img className="project-image" src={projectData.img} alt="Avatar" />
           </div>
           <div className="flip-card-back">
-            <h1>{projectData.title}</h1>
-            <p>{projectData.about}</p>
+            <div>
+              <h1 className="project-title">{t(projectData.title)}</h1>
+              <p>{t(projectData.about)}</p>
+            </div>
           </div>
         </div>
       </div>

@@ -206,8 +206,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u7bc1293d;
-          animation-name: inline-u7bc1293d;
+  -webkit-animation-name: inline-u7bcd01ad;
+          animation-name: inline-u7bcd01ad;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -223,7 +223,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u7bc1293d {
+@-webkit-keyframes inline-u7bcd01ad {
   0% {
     margin-left: 0px;
   }
@@ -235,7 +235,7 @@ body {
   }
 }
 
-@keyframes inline-u7bc1293d {
+@keyframes inline-u7bcd01ad {
   0% {
     margin-left: 0px;
   }
@@ -441,11 +441,10 @@ img.avatar {
 }
 
 .flip-outer-div {
-  background-color: #ffffff;
-  padding: 0.7em;
   margin: 0.75em 1.3em;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .flip-card {
@@ -491,11 +490,34 @@ img.avatar {
 }
 
 .flip-card-back {
-  background-color: #a3a3a3;
+  background-color: #f3d2d2;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  font-size: 75%;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flip-card-back > div {
+  width: 80%;
+}
+
+.project-title {
+  margin-bottom: 1.5em;
 }
 
 .project-image {
@@ -709,7 +731,6 @@ img.avatar {
   }
   .flip-outer-div {
     margin: 4.4%;
-    padding: 4%;
   }
 }
 
@@ -717,7 +738,6 @@ img.avatar {
   /******************** Project Section **********************/
   .flip-outer-div {
     margin: 8%;
-    padding: 4%;
   }
   .flip-card {
     width: 144px;
@@ -801,7 +821,7 @@ img.avatar {
   /******************** ABOUT ME Section **********************/
   .section-title,
   .about-section-title {
-    font-size: 20px;
+    font-size: 19px;
     margin: 2em;
     letter-spacing: 6px;
   }
@@ -843,7 +863,6 @@ img.avatar {
   }
   .flip-outer-div {
     margin: 2em 1em;
-    padding: 1.25%;
   }
   .flip-card {
     width: 154px;
