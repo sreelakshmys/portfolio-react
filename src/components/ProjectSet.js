@@ -1,6 +1,6 @@
 import hangman from "../images/hangman.jpg";
 import toDo from "../images/to-do-list.jpg";
-import techyNews from "../images/techy news.png";
+import techyNews from "../images/techy-news.png";
 
 const projectSet = [
   {
