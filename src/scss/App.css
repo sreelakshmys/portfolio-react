@@ -163,7 +163,6 @@ body {
   background: linear-gradient(110deg, #81c7cd 60%, #a5d7db 60%);
   padding: 2rem 0;
   /* Add some more padding on top and on bottom */
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Home / first section */
@@ -185,6 +184,7 @@ body {
       flex-wrap: wrap;
   position: relative;
   /* needed to position the language section absolute within this section */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .main-content {
@@ -211,8 +211,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-ua17363cc;
-          animation-name: inline-ua17363cc;
+  -webkit-animation-name: inline-u437e8e0d;
+          animation-name: inline-u437e8e0d;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -228,7 +228,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-ua17363cc {
+@-webkit-keyframes inline-u437e8e0d {
   0% {
     margin-left: 0px;
   }
@@ -240,7 +240,7 @@ body {
   }
 }
 
-@keyframes inline-ua17363cc {
+@keyframes inline-u437e8e0d {
   0% {
     margin-left: 0px;
   }
