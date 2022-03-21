@@ -28,9 +28,7 @@ export default function Header({ t }) {
         />
         <h1 className="dev-name">Sreelakshmy S</h1>
       </div>
-      {isShown && (
-        <div className="bubble-text">"More like shri-luck-shmeee"</div>
-      )}
+      {isShown && <div className="bubble-text">{t("NAME_HINT")}</div>}
       <div className="title-animation">
         <HeaderTitleTypeAnimation />
       </div>
