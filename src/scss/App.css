@@ -20,7 +20,8 @@ body[data-theme="dark"] .section {
 }
 
 body[data-theme="dark"] .bubble-text,
-body[data-theme="dark"] h1 {
+body[data-theme="dark"] .section-title,
+body[data-theme="dark"] .dev-name {
   color: white;
 }
 
@@ -205,8 +206,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-uaf4ef144;
-          animation-name: inline-uaf4ef144;
+  -webkit-animation-name: inline-u7bc1293d;
+          animation-name: inline-u7bc1293d;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -222,7 +223,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-uaf4ef144 {
+@-webkit-keyframes inline-u7bc1293d {
   0% {
     margin-left: 0px;
   }
@@ -234,7 +235,7 @@ body {
   }
 }
 
-@keyframes inline-uaf4ef144 {
+@keyframes inline-u7bc1293d {
   0% {
     margin-left: 0px;
   }
@@ -293,7 +294,8 @@ body {
   padding-top: 1.5rem;
 }
 
-.section-title {
+.section-title,
+.about-section-title {
   font: 14px/24px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -318,7 +320,7 @@ body {
   overflow: visible;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 7em 0em;
+  margin: 0em;
 }
 
 .polaroid {
@@ -366,7 +368,7 @@ img.avatar {
 .about-me-info {
   background: #fff;
   display: inline-block;
-  margin: 4em 2em;
+  margin: 3em 1em;
   text-align: center;
   text-decoration: none;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -377,7 +379,7 @@ img.avatar {
   z-index: 0;
   position: relative;
   width: 300px;
-  height: 170px;
+  height: 150px;
   max-width: 300px;
 }
 
@@ -401,16 +403,29 @@ img.avatar {
 .about-text-content {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 100;
-  padding: 8px;
+  padding: 9px;
+  text-align: justify;
+  line-height: 15px;
   display: inline-block;
   margin: 0 auto;
-  word-spacing: 9px;
-  font-size: 12px;
-  text-align: justify;
-  line-height: 14px;
+  word-spacing: 8px;
+  font-size: 10px;
 }
 
 /* projects-section */
+.projects-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .project-card-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,20 +437,20 @@ img.avatar {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 3em 1em 2.5em 1em;
+  margin: 0em 1em 0.5em 1em;
 }
 
 .flip-outer-div {
   background-color: #ffffff;
   padding: 0.7em;
-  margin: 1.3em;
+  margin: 0.75em 1.3em;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card {
-  width: 94px;
-  height: 133px;
+  width: 106px;
+  height: 122px;
 }
 
 .flip-card-inner {
@@ -524,7 +539,7 @@ img.avatar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1%;
+  padding: 0% 2%;
 }
 
 #horizontal-list {
@@ -603,7 +618,7 @@ img.avatar {
 #socials {
   background: #1f1f1f;
   color: white;
-  width: 60%;
+  width: 55%;
   border-radius: 45px;
 }
 
@@ -665,32 +680,48 @@ img.avatar {
     font-size: 25px;
   }
   /********************** About ME Section *********************/
-  .section-title {
-    font-size: 16px;
-    margin: 2em;
+  .section-title,
+  .about-section-title {
+    font-size: 19px;
+    margin: 2em 0em 1em;
   }
   .about-contents {
-    margin: 5em 0em;
+    margin: 3em 0em;
   }
   .about-text-content {
-    font-size: 14px;
+    font-size: 13px;
     word-spacing: 6px;
-    line-height: 15px;
+    line-height: 18px;
+  }
+  .about-me-info {
+    height: 190px;
   }
   .about-section {
     padding-top: 1.5rem;
   }
   /******************** Project Section **********************/
   .project-card-div {
-    margin: 8em 1em 0.5em 1em;
+    margin: 2% 3% 0.5% 1%;
   }
   .flip-card {
-    width: 115px;
-    height: 149px;
+    width: 110px;
+    height: 126px;
   }
   .flip-outer-div {
-    margin: 1.07em;
-    padding: 0.7em;
+    margin: 4.4%;
+    padding: 4%;
+  }
+}
+
+@media (min-width: 576px) {
+  /******************** Project Section **********************/
+  .flip-outer-div {
+    margin: 8%;
+    padding: 4%;
+  }
+  .flip-card {
+    width: 144px;
+    height: 171px;
   }
 }
 
@@ -720,9 +751,11 @@ img.avatar {
     font-size: 62px;
   }
   /******************** ABOUT ME Section **********************/
-  .section-title {
-    font-size: 18px;
+  .section-title,
+  .about-section-title {
+    font-size: 23px;
     margin: 2em;
+    letter-spacing: 4px;
   }
   .polaroid-image-span {
     margin: 27px 15px 30px 35px;
@@ -738,37 +771,39 @@ img.avatar {
     margin: 9% 5% 0 5%;
   }
   .about-me-info {
-    height: 185px;
-    max-width: 394px;
-    width: 397px;
-    margin: 2em;
+    height: 253px;
+    max-width: 542px;
+    width: 541px;
+    margin: 3em;
   }
   .about-contents {
-    margin: 3em;
+    margin: 5em 3em;
   }
   .about-text-content {
     padding: 16px;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 31px;
   }
   /******************** Project Section **********************/
   .project-card-div {
-    margin: 4em 2em;
+    margin: 3em 2em;
   }
   .flip-card {
-    width: 150px;
-    height: 189px;
+    width: 166px;
+    height: 212px;
   }
   .flip-outer-div {
-    margin: 0.75em;
+    margin: 3em;
   }
 }
 
 @media (min-width: 1024px) {
   /******************** ABOUT ME Section **********************/
-  .section-title {
-    font-size: 18px;
+  .section-title,
+  .about-section-title {
+    font-size: 20px;
     margin: 2em;
+    letter-spacing: 6px;
   }
   .polaroid-image-span {
     margin: 4px 10px 30px 45px;
@@ -800,13 +835,26 @@ img.avatar {
     line-height: 26px;
   }
   .about-contents {
-    margin: 8em 0em;
+    margin: 4em 0em;
+  }
+  .project-card-div {
+    margin: 2em 2em;
+    width: 85%;
+  }
+  .flip-outer-div {
+    margin: 2em 1em;
+    padding: 1.25%;
+  }
+  .flip-card {
+    width: 154px;
+    height: 189px;
   }
 }
 
 @media (min-width: 1440px) {
   /******************** ABOUT ME Section **********************/
-  .section-title {
+  .section-title,
+  .about-section-title {
     font-size: 20px;
   }
   .polaroid-image-span {
@@ -845,6 +893,93 @@ img.avatar {
   .flip-card {
     width: 200px;
     height: 230px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .dev-name {
+    font-size: 4em;
+  }
+  .thought-bubble {
+    font-size: 107px;
+  }
+  .title-animation {
+    font-size: 2em;
+  }
+  .owl-emoji,
+  .sun-emoji {
+    font-size: 48px;
+  }
+  .toggle-theme {
+    height: 38px;
+    width: 88px;
+  }
+  .slider:before {
+    height: 39px;
+    width: 39px;
+  }
+  .language-section {
+    height: 5em;
+  }
+  .language-icon {
+    font-size: 70px;
+  }
+  img.avatar {
+    max-width: 317px;
+    height: 361px;
+  }
+  .about-section-title,
+  .section-title {
+    font-size: 38px;
+  }
+  .flip-card {
+    width: 256px;
+    height: 308px;
+  }
+  .skill-icons {
+    font-size: 360%;
+  }
+  .skill-texts {
+    font-size: 108%;
+  }
+  .skills-tile {
+    width: 133px;
+    margin: 5px 2px;
+  }
+  .mern-stack-icons {
+    font-size: 260%;
+    margin: 9% 5% 0 5%;
+  }
+  .polaroid-image-span {
+    width: 319px;
+  }
+  .about-me-info {
+    height: 314px;
+    max-width: 800px;
+    width: 745px;
+  }
+  .circle-icon {
+    font-size: 12px;
+  }
+  .about-text-content {
+    padding: 33px 18px;
+    font-size: 25px;
+    line-height: 38px;
+  }
+  #socials {
+    width: 50%;
+    height: 47%;
+  }
+  .moto,
+  .contact-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .social-icons {
+    margin: 5.5em 0em 0em;
+  }
+  .social-media-icons {
+    font-size: 186%;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -33,7 +33,6 @@ function App() {
       return true;
     }
   }
-
   const { t } = useTranslation();
   const [checked, setChecked] = useState(initialCheck());
   // Function to change the theme
@@ -74,6 +73,14 @@ function App() {
         <GithubCorner
           href="https://github.com/sreelakshmys"
           direction="left"
+          className={() => {
+            console.log(window.innerWidth);
+            if (window.innerWidth >= 1440) {
+              return "github-corner";
+            } else {
+              return "";
+            }
+          }}
           size={90}
         />
 
@@ -95,23 +102,17 @@ function App() {
       </section>
       {/* page 2 */}
       <section className="about-section section">
-        <div>
-          <h1 className="section-title">
-            <span>{t("ABOUT ME")}</span>
-          </h1>
-          <div>
-            <About t={t} />
-          </div>
-        </div>
+        <h1 className="about-section-title">
+          <span>{t("ABOUT ME")}</span>
+        </h1>
+        <About t={t} />
       </section>
       {/* page 3 */}
       <section className="projects-section section">
-        <div>
-          <h1 className="section-title">
-            <span>{t("PROJECTS")}</span>
-          </h1>
-          <Projects />
-        </div>
+        <h1 className="section-title">
+          <span>{t("PROJECTS")}</span>
+        </h1>
+        <Projects />
       </section>
       {/* page 3 */}
       <section className="skills-section section">
