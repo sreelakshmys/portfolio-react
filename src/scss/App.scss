@@ -669,6 +669,20 @@ img.avatar {
     width: 154px;
     height: 189px;
   }
+
+  .slider:before {
+    height: 25px;
+    width: 22px;
+  }
+
+  .toggle-theme {
+    height: 25px;
+    width: 60px;
+  }
+  .owl-emoji,
+  .sun-emoji {
+    font-size: 26px;
+  }
 }
 
 @media (min-width: 1440px) {
