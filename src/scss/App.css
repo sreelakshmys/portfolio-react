@@ -205,8 +205,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u0560b894;
-          animation-name: inline-u0560b894;
+  -webkit-animation-name: inline-uaf4ef144;
+          animation-name: inline-uaf4ef144;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -222,7 +222,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u0560b894 {
+@-webkit-keyframes inline-uaf4ef144 {
   0% {
     margin-left: 0px;
   }
@@ -234,7 +234,7 @@ body {
   }
 }
 
-@keyframes inline-u0560b894 {
+@keyframes inline-uaf4ef144 {
   0% {
     margin-left: 0px;
   }
