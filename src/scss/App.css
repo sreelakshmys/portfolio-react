@@ -205,8 +205,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-ub510f456;
-          animation-name: inline-ub510f456;
+  -webkit-animation-name: inline-u0560b894;
+          animation-name: inline-u0560b894;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -222,7 +222,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-ub510f456 {
+@-webkit-keyframes inline-u0560b894 {
   0% {
     margin-left: 0px;
   }
@@ -234,7 +234,7 @@ body {
   }
 }
 
-@keyframes inline-ub510f456 {
+@keyframes inline-u0560b894 {
   0% {
     margin-left: 0px;
   }
@@ -603,7 +603,7 @@ img.avatar {
 #socials {
   background: #1f1f1f;
   color: white;
-  width: 50%;
+  width: 60%;
   border-radius: 45px;
 }
 
