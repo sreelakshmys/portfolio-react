@@ -29,6 +29,11 @@
   animation-iteration-count: infinite;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -37,7 +42,6 @@
 
 body {
   margin: 0;
-  height: $body-view-height;
   width: $body-view-width;
 }
 
@@ -47,6 +51,7 @@ body {
   height: $body-view-height;
   background: $light-theme-bg;
   padding: 2rem 0; /* Add some more padding on top and on bottom */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Home / first section */
@@ -431,10 +436,12 @@ img.avatar {
 
 .moto {
   font-style: italic;
+  font-size: 0.75em;
 }
 
 .contact-title {
   margin-top: 1em;
+  font-size: 0.75em;
 }
 
 .social-links {
@@ -498,9 +505,8 @@ img.avatar {
     width: 110px;
     height: 126px;
   }
-
   .flip-outer-div {
-    margin: 4.4%;
+    margin: 18.4%;
   }
 }
 
@@ -602,7 +608,7 @@ img.avatar {
   }
 
   .flip-outer-div {
-    margin: 3em;
+    margin: 7em;
   }
 }
 

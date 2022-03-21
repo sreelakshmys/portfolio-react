@@ -136,6 +136,11 @@ input:checked + .slider {
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   display: -webkit-box;
@@ -149,7 +154,6 @@ input:checked + .slider {
 
 body {
   margin: 0;
-  height: 100vh;
   width: 100vw;
 }
 
@@ -159,6 +163,7 @@ body {
   background: linear-gradient(110deg, #81c7cd 60%, #a5d7db 60%);
   padding: 2rem 0;
   /* Add some more padding on top and on bottom */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Home / first section */
@@ -206,8 +211,8 @@ body {
 }
 
 .thought-bubble {
-  -webkit-animation-name: inline-u2fb56831;
-          animation-name: inline-u2fb56831;
+  -webkit-animation-name: inline-u565173b0;
+          animation-name: inline-u565173b0;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -223,7 +228,7 @@ body {
           justify-content: flex-start;
 }
 
-@-webkit-keyframes inline-u2fb56831 {
+@-webkit-keyframes inline-u565173b0 {
   0% {
     margin-left: 0px;
   }
@@ -235,7 +240,7 @@ body {
   }
 }
 
-@keyframes inline-u2fb56831 {
+@keyframes inline-u565173b0 {
   0% {
     margin-left: 0px;
   }
@@ -674,10 +679,12 @@ img.avatar {
 
 .moto {
   font-style: italic;
+  font-size: 0.75em;
 }
 
 .contact-title {
   margin-top: 1em;
+  font-size: 0.75em;
 }
 
 .social-links {
@@ -730,7 +737,7 @@ img.avatar {
     height: 126px;
   }
   .flip-outer-div {
-    margin: 4.4%;
+    margin: 18.4%;
   }
 }
 
@@ -813,7 +820,7 @@ img.avatar {
     height: 212px;
   }
   .flip-outer-div {
-    margin: 3em;
+    margin: 7em;
   }
 }
 
