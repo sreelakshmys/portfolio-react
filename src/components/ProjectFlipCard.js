@@ -22,7 +22,7 @@ export default function ProjectFlipCard({ projectData, t }) {
             <div className="flip-card-back">
               <div>
                 <h1 className="project-title">{t(projectData.title)}</h1>
-                <p>{t(projectData.about)}</p>
+                <p className="project-about">{t(projectData.about)}</p>
               </div>
             </div>
           </div>
