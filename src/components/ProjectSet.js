@@ -7,16 +7,19 @@ const projectSet = [
     title: "HANGMAN_TITLE",
     about: "HANGMAN_PROJECT",
     img: hangman,
-  },
-  {
-    title: "TO-DO LIST",
-    about: "TO-DO PROJECT",
-    img: toDo,
+    url: `https://simple-hangman-game-react.netlify.app/`,
   },
   {
     title: "TECHY NEWS",
     about: "TECHY NEWS PROJECT",
     img: techyNews,
+    url: `https://techy-news-corner.netlify.app/`,
+  },
+  {
+    title: "TO-DO LIST",
+    about: "TO-DO PROJECT",
+    img: toDo,
+    url: `https://sreelakshmys.github.io/to-do-list-with-react/`,
   },
 ];
 
